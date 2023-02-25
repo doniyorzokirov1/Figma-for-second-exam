@@ -1,0 +1,135 @@
+.aboutsection {
+  margin-bottom: 150px;
+}
+
+.about_box {
+  display: flex;
+  gap: 125px;
+
+  .about_box_img {
+    max-width: 540px;
+    width: 100%;
+    display: block;
+    img {
+      display: block;
+      height: 100%;
+    }
+  }
+  .about_box_content {
+    max-width: 350px;
+    width: 100%;
+    .about_border_top {
+      width: 100%;
+      height: 1px;
+      background-color: #33323d;
+      mix-blend-mode: normal;
+      opacity: 0.15;
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-family: 'Ibarra Real Nova', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+      /* identical to box height, or 105% */
+      padding-bottom: 28px;
+      letter-spacing: -0.357143px;
+
+      color: #33323d;
+    }
+    p {
+      font-family: 'Public Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      /* or 188% */
+      padding-bottom: 41px;
+      color: #33323d;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+    a {
+      font-family: 'Public Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: #33323d;
+      text-decoration: none;
+      list-style-type: none;
+      padding: 17px 36px 17px 32px;
+      border: 1px solid #33323d;
+    }
+    .about_border_bottom {
+      width: 100%;
+      height: 1px;
+      background-color: #33323d;
+      mix-blend-mode: normal;
+      opacity: 0.15;
+      margin-top: 63px;
+    }
+  }
+}
+
+// // MEDIA FOR TABLET //
+@media only screen and (max-width: 1000px) {
+  .aboutsection {
+    margin-bottom: 96px;
+  }
+  .about_box {
+    gap: 69px;
+    .about_box_img {
+      max-width: 280px;
+    }
+    .about_box_content {
+      max-width:100%;
+      .about_border_top {
+        margin-bottom: 51px;
+      }
+      h2 {
+        padding-bottom: 28px;
+      }
+      p {
+        padding-bottom: 41px;
+      }
+      .about_border_bottom {
+        margin-top: 63px;
+      }
+    }
+  }
+}
+
+// // MEDIA FOR MOBILE //
+@media only screen and (max-width:750px) {
+    .aboutsection {
+        margin-bottom: 115px;
+    }
+    .about_box {
+        display: inline-block;
+        .about_box_img {
+            max-width: 100%;
+            margin-bottom: 32px;
+        }
+        .about_box_content {
+            max-width: 100%;
+            .about_border_top {
+                margin-bottom: 32px;
+                h2 {
+                    padding-bottom: 28px;
+                }
+                p {
+                    padding-bottom: 41%;
+                }
+                .about_border_bottom {
+                    margin-top: 51px;
+                }
+            }
+        }
+    }
+}

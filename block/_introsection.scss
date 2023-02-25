@@ -1,0 +1,122 @@
+.introsection {
+  margin-bottom: 150px;
+}
+
+.intro_box {
+  padding-top: 299px;
+  background-image: url(../images/desktop/Intro_png.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .intro_content {
+    max-width: 445px;
+    width: 100%;
+    padding-top: 56px;
+    padding-right: 55px;
+    background-color: #fafafa;
+    h2 {
+      font-family: 'Ibarra Real Nova', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      /* or 100% */
+      padding-bottom: 53px;
+      letter-spacing: -0.446429px;
+
+      color: #33323d;
+    }
+  }
+  .intro_link {
+    display: flex;
+    .intro_link_logo {
+      max-width: 48px;
+      width: 100%;
+      padding: 18px 0;
+      background-color: #1c3443;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 16px;
+        height: 12px;
+        margin: 0 auto;
+      }
+    }
+    a {
+      display: inline-block;
+      max-width: 152px;
+      width: 100%;
+      text-align: center;
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background-color: #203a4c;
+      color: #ffffff;
+      text-decoration: none;
+      list-style-type: none;
+      padding: 17px 0;
+    }
+  }
+  .intro_link:hover {
+    .intro_link_logo {
+      background-color: #3d7c6e;
+    }
+    a {
+      font-size: 12px;
+      line-height: 14px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+      background-color: #5fb4a2;
+    }
+  }
+}
+
+// // MEDIA FOR TABLET //
+
+@media only screen and (max-width: 1000px) {
+  .introsection {
+    margin-bottom: 96px;
+  }
+  .intro_box {
+    padding-top: 322px;
+    background-image: url(../images/tablet/tbt_intro.png);
+    .intro_content {
+      max-width: 514px;
+      padding-top: 56px;
+      padding-right: 56px;
+      h2 {
+        padding-bottom: 48px;
+        font-size: 40px;
+        line-height: 42px;
+      }
+    }
+  }
+}
+
+// // MEDIA FOR MOBILE //
+@media only screen and (max-width: 600px) {
+  .introsection {
+    margin-bottom: 368px;
+  }
+  .intro_box {
+    height: 271px;
+    background-image: url(../images/mobile/mb_img.png);
+    background-position: center;
+    .intro_content {
+      padding-top: 24px;
+      padding-right: 0;
+      h2 {
+        padding-bottom: 32px;
+      }
+    }
+  }
+}

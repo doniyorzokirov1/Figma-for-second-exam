@@ -12,7 +12,7 @@
     display: block;
     img {
       display: block;
-      height: 100%;
+      height:100% ;
     }
   }
   .about_box_content {
@@ -66,6 +66,10 @@
       padding: 17px 36px 17px 32px;
       border: 1px solid #33323d;
     }
+    a:hover {
+      background-color: #33323d;
+      color: #fff;
+    }
     .about_border_bottom {
       width: 100%;
       height: 1px;
@@ -85,10 +89,14 @@
   .about_box {
     gap: 69px;
     .about_box_img {
-      max-width: 280px;
+      max-width: 100%;
+      source {
+        width: 100%;
+      }
     }
     .about_box_content {
       max-width:100%;
+      height: 100%;
       .about_border_top {
         margin-bottom: 51px;
       }
@@ -106,7 +114,7 @@
 }
 
 // // MEDIA FOR MOBILE //
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:720px) {
     .aboutsection {
         margin-bottom: 115px;
     }

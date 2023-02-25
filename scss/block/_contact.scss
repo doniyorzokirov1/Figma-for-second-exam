@@ -12,6 +12,7 @@
       line-height: 42px;
       /* or 105% */
       max-width: 350px;
+      min-width: 350px;
       width: 100%;
 
       letter-spacing: -0.357143px;
@@ -42,6 +43,10 @@
       width: 100%;
       max-width: 162px;
     }
+    a:hover {
+      background-color: #33323d;
+      color: #fff;
+    }
   }
 }
 
@@ -64,6 +69,7 @@
       gap: 40px;
       h2 {
         max-width: 100%;
+        min-width: none;
         text-align: center;
       }
       .contact_border {

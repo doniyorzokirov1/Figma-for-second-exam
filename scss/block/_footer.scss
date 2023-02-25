@@ -41,9 +41,9 @@ footer {
     justify-content: space-between;
     max-width: 104px;
     width: 100%;
-    img {
-      display: block;
-    }
+   a svg:hover path {
+    fill: #5FB4A2;
+   }
   }
 }
 
